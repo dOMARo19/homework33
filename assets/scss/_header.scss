@@ -1,0 +1,52 @@
+@use "variables" as *; 
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 1.5rem;
+  padding-left: 1rem;
+
+  color: $header-color;
+  background-color: $header-background;
+}
+
+.logo {
+  margin: 0;
+
+  font-family: $main-font-family;
+  font-size: 2rem;
+}
+
+.nav {
+  &-list {
+    display: flex;
+
+    margin: 1rem;
+
+    list-style: none;
+
+    gap: 1rem;
+  }
+
+  &-item {
+    padding: 0.5rem;
+  }
+
+  &-link {
+    text-decoration: none;
+
+    color: $header-color;
+  }
+
+  &-link:hover {
+    color: $header-hover-color;
+  }
+}

@@ -1,0 +1,48 @@
+@use "variables" as *;
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+  padding: 1rem;
+
+  color: $main-color;
+  background-color: $main-background;
+}
+
+.title {
+  margin: 0 auto;
+
+  font-family: $main-font-family;
+  font-size: 5rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+
+  margin: 1rem auto;
+
+  gap: 1rem;
+
+  &-input {
+    width: 500px;
+    padding: 0.5rem;
+
+    border: 1px solid $main-color;
+    border-radius: 5px;
+  }
+
+  &-button {
+    width: 100px;
+    padding: 0.5rem;
+
+    color: $main-background;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    background-color: $main-color;
+  }
+}
