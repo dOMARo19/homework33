@@ -58,7 +58,8 @@ body {
   color: white;
 }
 .nav-link:hover {
-  color: rgb(224, 11, 11);
+  color: white;
+  background-color: rgb(155, 1, 179);
 }
 
 .main {

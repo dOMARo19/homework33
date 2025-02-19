@@ -57,6 +57,7 @@ body {
   }
 
   &-link:hover {
-    color: $header-hover-color;
+    color: $header-color;
+    background-color: $header-background;
   }
 }
