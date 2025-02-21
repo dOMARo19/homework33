@@ -6,7 +6,6 @@ body {
   background-image: url("../images/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   width: 100%;
   z-index: 0;
   opacity: 0;
