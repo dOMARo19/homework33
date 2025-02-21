@@ -4,18 +4,42 @@ body {
   overflow-x: hidden;
 }
 
+.background {
+  background-image: url("../images/back-img.jpg");
+  background-size: cover;
+  // background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  // position: relative;
+  z-index: 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .header {
   z-index: 1;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   width: 100%;
   padding: 1rem;
   
 
   color: $header-color;
-  background-color: $header-background;
+  // background-color: $header-background;
 }
 
 .logo {
@@ -57,7 +81,7 @@ body {
   }
 
   &-link:hover {
-    color: $header-color;
-    background-color: $header-background;
+    color: $header-background;
+    background-color: $header-color;
   }
 }

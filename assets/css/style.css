@@ -2,19 +2,52 @@ body {
   overflow-x: hidden;
 }
 
+.background {
+  background-image: url("../images/back-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s ease-in-out forwards;
+          animation: fadeIn 2s ease-in-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .header {
   z-index: 1;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   padding: 1rem;
   color: white;
-  background-color: rgb(155, 1, 179);
 }
 
 .logo {
@@ -58,8 +91,8 @@ body {
   color: white;
 }
 .nav-link:hover {
-  color: white;
-  background-color: rgb(155, 1, 179);
+  color: rgb(155, 1, 179);
+  background-color: white;
 }
 
 .main {
@@ -79,7 +112,6 @@ body {
   height: 100vh;
   padding: 1rem;
   color: rgb(30, 11, 200);
-  background-color: white;
 }
 
 .title {
